@@ -1,18 +1,15 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    const currentYearElement = document.getElementById('currentYear');
-    const currentYear = new Date().getFullYear();
-    if (currentYearElement) {
-        currentYearElement.textContent = currentYear;
-    }
+// Select the elements where the dates will be displayed
+const currentYearElement = document.querySelector("#currentdate");
+const lastModifiedElement = document.querySelector("#last-modified-date");
 
-    const lastModifiedElement = document.getElementById('lastModified');
-    const lastModified = document.lastModified;
-    if (lastModifiedElement) {
-        lastModifiedElement.textContent = `Last Modified: ${lastModified}`;
-    }
-});
+// Get the current year
+const currentYear = new Date().getFullYear();
 
+// Get the last modified date of the document
+const lastModified = document.lastModified;
 
-function myFunction(x) {
-            x.classList.toggle("change");
-        }
+// Set the current year in the footer's first paragraph
+currentYearElement.textContent = currentYear;
+
+// Set the last modified date in the footer's second paragraph
+lastModifiedElement.textContent = lastModified;
