@@ -1,163 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>WDD 131 – Dynamic Web Fundamentals - Michael Kazembe</title>
-    <meta
-      name="description"
-      content="WDD 131 – Dynamic Web Fundamentals by Michael Kazembe. Learn about web development, HTML, CSS, JavaScript, and responsive design."
-    >
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Michael Kazembe">
-    <link rel="stylesheet" href="styles/base.css">
-    <!-- Preconnect to Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Link to the Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="site-header">
-      <h1 class="site-title">WDD 131 – Dynamic Web Fundamentals <span>- By Michael Kazembe</span></h1>
-      <nav class="site-navigation">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="https://linkedin.com/in/michael-kazembe" class="nav-link">LinkedIn</a>
-          </li>
-          <li class="nav-item">
-            <a href="https://byupw.instructure.com/" class="nav-link">Canvas</a>
-          </li>
-          <li class="nav-item">
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/2-cor/5?lang=eng&id=p17#p17" class="nav-link">Scripture</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Final Project</a>
-          </li>
-        </ul>
-      </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 – Dynamic Web Fundamentals – Blessing Mpofu</title>
+        <meta name="description" content="Explore the personal journey of Blessing Mpofu as he studies web development in the WDD 131 - Dynamic Web Fundamentals course, including projects, learning resources, and insights gained throughout the semester.">
+        <meta name="author" content="Blessing Mpofu, student of WDD131 - Dynamic Web Fundamentals at BYU-Idaho">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+        <noscript>
+          <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap" rel="stylesheet">
+        </noscript>
+        <script src="scripts/getdates.js" defer></script>
+      </head>
+      
+<body>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - <span>Blessing Mpofu</span></h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/blessingmpofu1" target="_blank">LinkedIn</a>
+            <a href="https://www.byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
     </header>
-    <main class="main-content">
-      <!-- About Me -->
-      <section class="card">
-        <div class="bio">
-          <h2 class="card-title">About Me</h2>
-          <img
-            src="images/michael-kazembe1.jpg"
-            alt="Description of image 1"
-            class="card-image-1"
-          >
-          <p class="card-text">
-            Hello, my name is Michael Kazembe. You can call me MK. I am from
-            Malawi, a small country in the south eastern part of Africa. I am a
-            student at Brigham Young University(BYU)-Idaho. I am studying
-            Software Development. I am currently taking a Web Design and
-            Development course. I am excited to learn more about web
-            development. I have a passion for creating user-friendly websites
-            and applications. My journey in tech started with a love for
-            problem-solving and innovation. I also enjoy collaborating with
-            others to bring ideas to life. Outside of tech, I appreciate
-            exploring new cultures and spending time with family. I am excited
-            to see where this journey takes me. I believe technology has the
-            power to make a positive impact on people's lives. My goal is to use
-            my skills to create solutions that address real-world challenges. I
-            am constantly looking for opportunities to grow and improve in my
-            field. This course is another step toward achieving my dreams in the
-            tech industry.
-          </p>
-        </div>
-        <div class="about-malawi">
-          <h2>Malawi, Africa</h2>
-          <hr>
-          <figure>
-            <img src="images/Malawi-flag.png" alt="Malawi Flag" class="flag">
-            <figcaption>Flag of Malawi</figcaption>
-          </figure>
-          <p>
-            Malawi, known as "The Warm Heart of Africa," is a landlocked country
-            in southeastern Africa. It is renowned for its stunning Lake Malawi,
-            which is the third-largest lake in Africa and home to more fish
-            species than any other lake in the world. The country is also famous
-            for its rich culture, friendly people, and beautiful landscapes,
-            including the Mulanje Mountain and the Nyika Plateau. Despite being
-            one of the world's least developed countries, Malawi's vibrant
-            traditions and natural beauty make it a unique and fascinating
-            destination.
-          </p>
-        </div>
-      </section>
-      <!-- Web Dev Resources -->
-      <section class="card">
-        <h2 class="card-title">Web Dev Resources</h2>
-        <ul class="resource-list">
-          <li class="resource-item">
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-              class="resource-link"
-            >
-              <img
-                src="images/html-icon.png"
-                alt="HTML Icon"
-                class="resource-icon"
-              >
-              HTML Documentation
-            </a>
-          </li>
-          <li class="resource-item">
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-              class="resource-link"
-            >
-              <img
-                src="images/css-icon.png"
-                alt="CSS Icon"
-                class="resource-icon"
-              >
-              CSS Documentation
-            </a>
-          </li>
-          <li class="resource-item">
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-              class="resource-link"
-            >
-              <img
-                src="images/javascript-icon.png"
-                alt="JavaScript Icon"
-                class="resource-icon"
-              >
-              JavaScript Documentation
-            </a>
-          </li>
-          <li class="resource-item">
-            <a href="https://reactjs.org/" class="resource-link">
-              <img
-                src="images/react-icon.png"
-                alt="React Icon"
-                class="resource-icon"
-              >
-              React Documentation
-            </a>
-          </li>
-        </ul>
-      </section>
+
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="about-me">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est eos esse veritatis? Quam reprehenderit explicabo, neque modi harum placeat accusantium dolorum minus possimus, facilis amet earum? Reiciendis vero eum hic.</p>
+                <img src="images/profile.webp" loading="lazy" alt="Picture of Blessing Mpofu 's profile picture a WDD131-Dynamic Web Fundamentals student" width="150" height="150">
+            </div>
+            <h3>Gweru, Zimbabwe</h3>
+            <aside>
+                <img src="images/zimflag.webp" loading="lazy" alt="Zimbabwe National Flag with five colours namely black, red, gold, green and white." width="300" height="200">
+                <div>
+                    <p>Gweru is the third largest capital city of the Southern African country, Zimbabwe. It is home to a various number of animal species and minerals. It is one of the richest African countries in terms of minerals.</p>
+                </div>
+            </aside>
+        </section>
+
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <nav class="seperate">
+                <ul>
+                    <li><a href="#">Dev.to Community</a></li>
+                    <li><a href="#">Smashing Magazine</a></li>
+                    <li><a href="#">CSS Tricks</a></li>
+                    <li><a href="#">W3 Schools</a></li>
+                    <li><a href="#">Udemy</a></li>
+                    <li><a href="#">Image Placeholder</a></li>
+                </ul>
+            </nav>
+        </section>
     </main>
-    <!-- FOOTER -->
-    <footer class="site-footer">
-      <p class="footer-text">
-        &copy; <span id="currentdate"></span> Michael Kazembe 🇲🇼 Malawi, Africa
-      </p>
-      <p id="last-modified" class="footer-modified">
-        Last Modified: <span id="last-modified-date"></span>
-      </p>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Blessing Mpofu, Midlands, Zimbabwe</p>
+        <p id="lastmodified"></p>
     </footer>
-    <script src="scripts/getdates.js" defer></script>
-  </body>
+</body>
 </html>

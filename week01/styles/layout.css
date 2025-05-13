@@ -1,70 +1,25 @@
-.content-wrapper {
-  display: grid;
-  grid-template-areas:
-    "header header header"
-    "nav nav nav"
-    "main main aside"
-    "footer footer footer";
-  grid-template-columns: 1fr 2fr 1fr; /* Adjusted column sizes */
-  grid-template-rows: auto auto 1fr auto; /* Adjusted row sizes */
-  height: 100vh; /* Ensure the grid takes the full viewport height */
-}
-
-.site-header {
-  grid-area: header;
-  background-color: #333;
-  color: white;
-  text-align: left;
-  padding: 10px;
-}
-
-.navigation {
-  grid-area: nav;
-  background-color: #444;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
-
-.main-content {
-  grid-area: main;
-  background-color: #f4f4f4;
-  padding: 20px;
-  display: flex; /* Use flexbox for main content layout */
-}
-
-.main-div {
-  flex: 2; /* Take up two-thirds of the space */
-  padding: 20px;
-}
-
-.sidebar {
-  grid-area: aside;
-  background-color: #e0e0e0;
-  padding: 20px;
-}
-
-.site-footer {
-  grid-area: footer;
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
-
-/* Additional styling for navigation links */
-.nav-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.nav-item {
-  margin: 0 15px;
-}
-
-.nav-link {
-  color: white;
-  text-decoration: none;
-}
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh; 
+  }
+  
+.navbar {
+    display: flex;
+    justify-content: center;   
+    gap: 2rem;                 
+    background-color: #333;   
+    padding: 1rem;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', sans-serif; 
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  

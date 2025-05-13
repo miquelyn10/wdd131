@@ -1,151 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>WDD 131 – Dynamic Web Fundamentals - Michael Kazembe</title>
-    <meta
-      name="description"
-      content="WDD 131 – Dynamic Web Fundamentals by Michael Kazembe. Learn about web development, HTML, CSS, JavaScript, and responsive design."
-    >
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Michael Kazembe">
-    <link rel="stylesheet" href="styles/temples.css">
-    <link
-      rel="stylesheet"
-      href="styles/temples-large.css"
-      media="(min-width: 769px)"
-    >
-    <!-- Preconnect to Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Link to the Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100...900;1,100,...900&display=swap"
-      rel="stylesheet"
-    >
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap"
-      rel="stylesheet"
-    >
-  </head>
-  <body>
-    <header class="site-header">
-      <h1 class="site-title">Temple Album</h1>
-      <nav class="site-nav">
-        <!-- Hamburger Menu -->
-        <div class="hamburger-menu" id="hamburgerMenu">&#9776;</div>
-        <!-- Close Icon -->
-        <div class="close-icon" id="closeIcon">&#10006;</div>
-        <!-- Navigation Links -->
-        <ul class="nav-list" id="navLinks">
-          <li class="nav-item">
-            <a href="temples.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Old</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">New</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Large</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Small</a>
-          </li>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explore the personal journey of Blessing Mpofu as he studies web development in the WDD 131 - Dynamic Web Fundamentals course, including projects, learning resources, and insights gained throughout the semester.">
+        <meta name="author" content="Blessing Mpofu, student of WDD131 - Dynamic Web Fundamentals at BYU-Idaho">
+        <title>WDD 131 – Dynamic Web Fundamentals – Blessing Mpofu</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+        <noscript><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"></noscript>
+        <link rel="preload" as="image" href="images/harare-zimbabwe-temple.webp" type="image/webp">
+        <link rel="stylesheet" href="styles/temples.css">
+        <link rel="stylesheet" href="styles/temples-large.css">
+        <script src="scripts/temples.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+    </head>
+      
+      <body>
+  <header>
+    <p>Temple Album</p>
+    <button id="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <nav id="primary-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Old</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Large</a></li>
+          <li><a href="#">Small</a></li>
         </ul>
       </nav>
-    </header>
-    <main class="main-content">
-      <h1>Temple Gallery</h1>
-      <h2 class="subheading">Explore the Beauty of Temples Around the World</h2>
-      <section class="temples-gallery">
-        <figure class="fig-element">
-          <img
-            src="images/maceio-brazil-temple.jpg"
-            alt="Maceio-Brazil-Temple"
-            class="fig-image"
-          >
-          <figcaption class="fig-caption">Maceio Brazil Temple</figcaption>
-        </figure>
-        <figure class="fig-element">
-          <img
-            src="images/maceio-brazil-temple.jpg"
-            alt="Maceio-Brazil-Temple"
-            class="fig-image"
-          >
-          <figcaption class="fig-caption">Maceio Brazil Temple</figcaption>
-        </figure>
-        <figure class="fig-element">
-          <img
-            src="images/maceio-brazil-temple.jpg"
-            alt="Maceio-Brazil-Temple"
-            class="fig-image"
-          >
-          <figcaption class="fig-caption">Maceio Brazil Temple</figcaption>
-        </figure>
-        <figure class="fig-element">
-          <img
-            src="images/maceio-brazil-temple.jpg"
-            alt="Maceio-Brazil-Temple"
-            class="fig-image"
-          >
-          <figcaption class="fig-caption">Maceio Brazil Temple</figcaption>
-        </figure>
-        <figure class="fig-element">
-          <img
-            src="images/maceio-brazil-temple.jpg"
-            alt="Maceio-Brazil-Temple"
-            class="fig-image"
-          >
-          <figcaption class="fig-caption">Maceio Brazil Temple</figcaption>
-        </figure>
-        <figure class="fig-element">
-          <img
-            src="images/maceio-brazil-temple.jpg"
-            alt="Maceio-Brazil-Temple"
-            class="fig-image"
-          >
-          <figcaption class="fig-caption">Maceio Brazil Temple</figcaption>
-        </figure>
-        <figure class="fig-element">
-          <img
-            src="images/maceio-brazil-temple.jpg"
-            alt="Maceio-Brazil-Temple"
-            class="fig-image"
-          >
-          <figcaption class="fig-caption">Maceio Brazil Temple</figcaption>
-        </figure>
-        <figure class="fig-element">
-          <img
-            src="images/maceio-brazil-temple.jpg"
-            alt="Maceio-Brazil-Temple"
-            class="fig-image"
-          >
-          <figcaption class="fig-caption">Maceio Brazil Temple</figcaption>
-        </figure>
-        <figure class="fig-element">
-          <img
-            src="images/maceio-brazil-temple.jpg"
-            alt="Maceio-Brazil-Temple"
-            class="fig-image"
-          >
-          <figcaption class="fig-caption">Maceio Brazil Temple</figcaption>
-        </figure>
-      </section>
-    </main>
-    <footer class="site-footer">
-      <p class="footer-text">
-        &copy;
-        <span id="currentdate"></span>
-        Michael Kazembe 🇲🇼 Malawi, Africa
-      </p>
-      <p id="last-modified" class="footer-modified">
-        Last Modified:
-        <span id="last-modified-date"></span>
-      </p>
-    </footer>
-    <script src="scripts/temples.js" defer></script>
-  </body>
+  </header>
+
+  <main>
+    <h1>Temple Album Home</h1>
+    <h2>Explore Our Temple Collection</h2> 
+    <div class="grid">
+      <figure>
+        <img src="images/harare-zimbabwe-temple.webp" alt="A picture of the Harare Zimbabwe Temple.">
+        <figcaption>Harare, Zimbabwe</figcaption>
+      </figure>
+      <figure>
+        <img src="images/harare-zimbabwe-temple.webp" alt="A picture of the Harare Zimbabwe Temple.">
+        <figcaption>Harare, Zimbabwe</figcaption>
+      </figure>
+      <figure>
+        <img src="images/harare-zimbabwe-temple.webp" alt="A picture of the Harare Zimbabwe Temple.">
+        <figcaption>Harare, Zimbabwe</figcaption>
+      </figure>
+      <figure>
+        <img src="images/harare-zimbabwe-temple.webp" alt="A picture of the Harare Zimbabwe Temple.">
+        <figcaption>Harare, Zimbabwe</figcaption>
+      </figure>
+      <figure>
+        <img src="images/harare-zimbabwe-temple.webp" alt="A picture of the Harare Zimbabwe Temple.">
+        <figcaption>Harare, Zimbabwe</figcaption>
+      </figure>
+      <figure>
+        <img src="images/harare-zimbabwe-temple.webp" alt="A picture of the Harare Zimbabwe Temple.">
+        <figcaption>Harare, Zimbabwe</figcaption>
+      </figure>
+      <figure>
+        <img src="images/harare-zimbabwe-temple.webp" alt="A picture of the Harare Zimbabwe Temple.">
+        <figcaption>Harare, Zimbabwe</figcaption>
+      </figure>
+      <figure>
+        <img src="images/harare-zimbabwe-temple.webp" alt="A picture of the Harare Zimbabwe Temple.">
+        <figcaption>Harare, Zimbabwe</figcaption>
+      </figure>
+      <figure>
+        <img src="images/harare-zimbabwe-temple.webp" alt="A picture of the Harare Zimbabwe Temple.">
+        <figcaption>Harare, Zimbabwe</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span>🌳 Blessing Mpofu, Midlands, Zimbabwe 🌳</p>
+    <p id="lastmodified"></p>
+  </footer>
+</body>
 </html>
