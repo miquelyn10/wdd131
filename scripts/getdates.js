@@ -1,6 +1,8 @@
+// Populate current year
+const yearSpan = document.getElementById('currentyear');
+const currentYear = new Date().getFullYear();
+yearSpan.textContent = currentYear;
 
-// Populate the current year
-document.getElementById("currentyear").textContent = new Date().getFullYear();
-
-// Populate the last modified date in the second paragraph
-document.getElementById("lastmodified").textContent = `Last Modified: ${document.lastModified}`;
+// Populate last modified date
+const lastModPara = document.getElementById('lastModified');
+lastModPara.textContent = `Last Modified: ${document.lastModified}`;
