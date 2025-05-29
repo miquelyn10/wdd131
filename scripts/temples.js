@@ -1,17 +1,10 @@
-const currentYear = new Date().getFullYear();
-document.getElementById("currentyear").textContent = currentYear;
-const lastModifiedDate = document.lastModified;
-document.getElementById("lastModified").textContent = `Last modified on: ${lastModifiedDate}`;
+document.addEventListener("DOMContentLoaded", function () {
+    const menuButton = document.getElementById("menu-toggle");
+    const nav = document.getElementById("primary-nav");
 
-
-document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.getElementById('menu');
-    const navlist = document.querySelector('nav');
-    
-    if (hamburger && navlist) {
-        hamburger.addEventListener('click', () => {
-            navlist.classList.toggle('open');
-            hamburger.classList.toggle('open');
-        });
-    }
+    menuButton.addEventListener("click", () => {
+        nav.classList.toggle("open");
+        const isOpen = nav.classList.contains("open");
+        menuButton.innerHTML = isOpen ? "&#10005;" : "&#9776;";
+    });
 });

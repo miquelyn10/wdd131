@@ -1,88 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A simple temple album page showcasing various temples.">
-    <link rel="stylesheet" href="styles/temples.css">
-    <title>Temple Album</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@1,300;1,400;1,500&display=swap" rel="stylesheet">
-    <script src="scripts/temples.js" defer></script>
-</head>
-<body>
-    <header>
-        <div class="header-title">
-            <h1>Temple Album</h1>
-        </div>
-        <button id="menu"></button>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-         <h2>Home</h2>
-        <div class="gallery-container">
-            <figure>
-                <img src="images/temple_image.jpg" alt="Temple Name">
-                <figcaption>Temple 1</figcaption>
-            </figure>
-            <figure>
-                <img src="images/temple_image.jpg" alt="Temple Name">
-                <figcaption>Temple 2</figcaption>
-            </figure>
-            <figure>
-                <img src="images/temple_image.jpg" alt="Temple Name">
-                <figcaption>Temple 3</figcaption>
-            </figure>
-            <figure>
-                <img src="images/temple_image.jpg" alt="Temple Name">
-                <figcaption>Temple 4</figcaption>
-            </figure>
-            <figure>
-                <img src="images/temple_image.jpg" alt="Temple Name">
-                <figcaption>Temple 5</figcaption>
-            </figure>
-            <figure>
-                <img src="images/temple_image.jpg" alt="Temple Name">
-                <figcaption>Temple 6</figcaption>
-            </figure>
-            <figure>
-                <img src="images/temple_image.jpg" alt="Temple Name">
-                <figcaption>Temple 7</figcaption>
-            </figure>
-            <figure>
-                <img src="images/temple_image.jpg" alt="Temple Name">
-                <figcaption>Temple 8</figcaption>
-            </figure>
-            <figure>
-                <img src="images/temple_image.jpg" alt="Temple Name">
-                <figcaption>Temple 9</figcaption>
-            </figure>
-            <figure>
-                <img src="images/temple_image.jpg" alt="Temple Name">
-                <figcaption>Temple 10</figcaption>
-            </figure>
-            <figure>
-                <img src="images/temple_image.jpg" alt="Temple Name">
-                <figcaption>Temple 11</figcaption>  
-            </figure>   
-            <figure>
-                <img src="images/temple_image.jpg" alt="Temple Name">
-                <figcaption>Temple 12</figcaption>
-            </figure>
-        </div>
-    </main>
-    <footer>
-        <p>&copy;<span id="currentyear"></span> | Jesus Claus Kagubare | Rwanda</p>
-        <p><span id="lastModified"></span></p>
-    </footer>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explore the personal journey of Blessing Mpofu as he studies web development in the WDD 131 - Dynamic Web Fundamentals course, including projects, learning resources, and insights gained throughout the semester.">
+        <meta name="author" content="Blessing Mpofu, student of WDD131 - Dynamic Web Fundamentals at BYU-Idaho">
+        <title>WDD 131 – Dynamic Web Fundamentals – Blessing Mpofu</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+        <noscript><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"></noscript>
+        <link rel="preload" as="image" href="images/harare-zimbabwe-temple.webp" type="image/webp">
+        <link rel="stylesheet" href="styles/temples.css">
+        <link rel="stylesheet" href="styles/temples-large.css">
+        <script src="scripts/temples.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+    </head>
+      
+      <body>
+  <header>
+    <p>Temple Album</p>
+    <button id="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <nav id="primary-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Old</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Large</a></li>
+          <li><a href="#">Small</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+    <h1>Temple Album Home</h1>
+    <h2>Explore Our Temple Collection</h2> 
+    <div class="grid">
+      <figure>
+        <img src="images/harare-zimbabwe-temple.webp" alt="A picture of the Harare Zimbabwe Temple.">
+        <figcaption>Harare, Zimbabwe</figcaption>
+      </figure>
+      <figure>
+        <img src="images/harare-zimbabwe-temple.webp" alt="A picture of the Harare Zimbabwe Temple.">
+        <figcaption>Harare, Zimbabwe</figcaption>
+      </figure>
+      <figure>
+        <img src="images/harare-zimbabwe-temple.webp" alt="A picture of the Harare Zimbabwe Temple.">
+        <figcaption>Harare, Zimbabwe</figcaption>
+      </figure>
+      <figure>
+        <img src="images/harare-zimbabwe-temple.webp" alt="A picture of the Harare Zimbabwe Temple.">
+        <figcaption>Harare, Zimbabwe</figcaption>
+      </figure>
+      <figure>
+        <img src="images/harare-zimbabwe-temple.webp" alt="A picture of the Harare Zimbabwe Temple.">
+        <figcaption>Harare, Zimbabwe</figcaption>
+      </figure>
+      <figure>
+        <img src="images/harare-zimbabwe-temple.webp" alt="A picture of the Harare Zimbabwe Temple.">
+        <figcaption>Harare, Zimbabwe</figcaption>
+      </figure>
+      <figure>
+        <img src="images/harare-zimbabwe-temple.webp" alt="A picture of the Harare Zimbabwe Temple.">
+        <figcaption>Harare, Zimbabwe</figcaption>
+      </figure>
+      <figure>
+        <img src="images/harare-zimbabwe-temple.webp" alt="A picture of the Harare Zimbabwe Temple.">
+        <figcaption>Harare, Zimbabwe</figcaption>
+      </figure>
+      <figure>
+        <img src="images/harare-zimbabwe-temple.webp" alt="A picture of the Harare Zimbabwe Temple.">
+        <figcaption>Harare, Zimbabwe</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span>🌳 Blessing Mpofu, Midlands, Zimbabwe 🌳</p>
+    <p id="lastmodified"></p>
+  </footer>
 </body>
 </html>

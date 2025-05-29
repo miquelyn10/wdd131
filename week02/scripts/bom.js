@@ -1,23 +1,29 @@
-// Get references to DOM elements
-const input = document.querySelector("#favchap");
-const button = document.querySelector("button");
-const list = document.querySelector("ul");
+const inputElement = document.querySelector('input');
+const buttonElement = document.querySelector('button');
+const listElement = document.querySelector('ul');
 
-button.addEventListener("click", function () {
-  if (input.value.trim() !== "") {
-    const listItem = document.createElement("li");
-    const deleteButton = document.createElement("button");
-    listItem.textContent = input.value;
-    deleteButton.textContent = "❌";
-    listItem.append(deleteButton);
-    list.appendChild(listItem);
+inputElement.focus();
 
-    deleteButton.addEventListener("click", function () {
-      list.removeChild(listItem);
-      input.focus();
+buttonElement.addEventListener('click', function() {
+  if (inputElement.value.trim() !== '') {
+    const listItem = document.createElement('li');
+    listItem.textContent = inputElement.value;
+
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = '❌';
+    listItem.appendChild(deleteButton);
+
+    deleteButton.addEventListener('click', function () {
+      listElement.removeChild(listItem);
+      inputElement.focus();
     });
 
-    input.value = "";
-    input.focus();
+    listElement.appendChild(listItem);
+
+    inputElement.value = '';
+  } else {
+    inputElement.focus();
   }
+
+  inputElement.focus();
 });
