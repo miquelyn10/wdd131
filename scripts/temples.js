@@ -1,10 +1,16 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const menuButton = document.getElementById("menu-toggle");
-    const nav = document.getElementById("primary-nav");
+const currentYear = new Date().getFullYear();
+const yearElement = document.getElementById("currentyear");
+yearElement.textContent = currentYear;
 
-    menuButton.addEventListener("click", () => {
-        nav.classList.toggle("open");
-        const isOpen = nav.classList.contains("open");
-        menuButton.innerHTML = isOpen ? "&#10005;" : "&#9776;";
-    });
+const lastModifiedDate = document.lastModified;
+const lastModifiedElement = document.getElementById("lastmodified");
+lastModifiedElement.textContent = lastModifiedDate;
+
+const mainnav = document.querySelector('.navigation');
+const hambutton = document.querySelector('#menu');
+
+hambutton.addEventListener('click', () => {
+    mainnav.classList.toggle('show');
+    hambutton.classList.toggle('show');
 });
+
