@@ -1,194 +1,202 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-:root {
-    --primary-color: #183059;
-    --secondary-color: #20508C;
-    --accent1-color: #276FBF;
-    --accent2-color: #FAF8F7;
-}
 body {
-    padding: 8px;
-}
-h2 {
-    font-family: "Roboto", sans-serif;
-}
-
-p {
-    font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+  color: #212529;
+  line-height: 1.6;
 }
 
-.header-content {
-    font-family: "Roboto", serif;
-    background-color: var(--secondary-color);
-    padding: 2rem;
-    text-align: center;
-}
-.course-title {
-    color: var(--accent2-color);
-    font-style: italic;
-}
-.my-name {
-    color: greenyellow;
-    font-weight: bold;
-    font-size: 1.5rem;
+/* ===== HEADER ===== */
+header {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
 }
 
-.navigation {
-    background-color: var(--primary-color);
-    padding: 0.8rem;
-}
-nav ul{
-    display: flex;
-    justify-content: space-around;    
-    
+#course-title {
+  display: block;
+  font-size: 1.2rem;
 }
 
-nav ul li{
-    list-style: none;
-   
+.highlight {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+  background-color: #1d3b53; /* darker shade to separate from header */
+  display: flex;
+  justify-content: space-around; /* spread links across full width */
+  padding: 0.1rem 0;
 }
 
 nav a {
-    text-decoration: none;
-    display: block;
-    color: var(--accent2-color);
-    font-size: 1.2rem;
-    font-family: sans-serif;
-    transition: all 0.3s ease;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover {
-    color: greenyellow;
-    background-color: var(--secondary-color);
-    padding: 0 1.5px;
-    border-radius: 3px;
-    transform: translateY(-1.5px);
-
+  background-color: #ffcc00;
+  color: #003366;
 }
 
+/* ===== MAIN ===== */
 main {
-    display: grid;
-    grid-template-columns: 1fr 450px;
-    justify-content: center;
-    max-width: 90%;
-    margin: 5px auto;
-    
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem;
 }
 
-
-.card h2 {
-    text-align: center;
-    font-weight: bold;
-    color: var(--accent2-color);
-    background-color: var(--secondary-color);
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-    padding: 10px;
-   
+h1 {
+  text-align: center;
+  color: #003366;
 }
 
+/* Grid layout for cards */
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+/* ===== CARDS ===== */
 .card {
-    margin: 5px;
-    border: 1.5px solid rgba(0, 0, 0, 0.2);
-    color: var(--secondary-color);
-    font-family: "Roboto", sans-serif;
-    font-weight: 550;
-    line-height: 1.5rem;
-    border-radius: 7px;
-}
-.card p {
-    padding: 15px;
-}
-.profile-image {
-    border: 1px solid var(--primary-color);
-    box-shadow: 0 0 30px gray;
-    margin: 10px;
-    grid-column: 2 / 3;
+  border: 1px solid #dee2e6;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  padding: 0;
+  overflow: hidden;
+  border: 0.1rem solid lightgrey;
 }
 
+.card-title {
+  background-color: #1d3b53;
+  color: white;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  margin: 0;
+  text-align: center;
+}
+
+.card-content {
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+/* Profile section */
 .about-me {
-    display: grid;
-}
-.about-me-column {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-.hobby-container {
-    display: grid;
-    justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.my-links ul {
-    padding-left: 40px;
-}
-.my-country-grid {
-    display: grid;
-}
-figure {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-    padding: 5px;
-    max-width: 180px;
-    margin: auto;
-    grid-column: 1 / 2;
-
-}
-.my-country-grid p {
-    grid-column: 2 / 3;
-}
-figure img {
-    width: 170px;
+.about-me p {
+  flex: 1;
 }
 
-figcaption {
-    font-family: sans-serif;
-    font-weight: 350;
-    font-size: 0.8rem;
-    line-height: 0.5rem;
-    font: italic smaller sans-serif;
-    padding: 3px;
-    text-align: center;
-    
-}
-.my-country {
-    display: block;
-    font-weight: bold;
-    color: var(--primary-color);
-    font-size: 1.2rem;
-    text-align: center;
-    border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);
+.about-me img {
+  max-width: 150px;
+  border-radius: 0.5rem;
 }
 
-.coat-of-arms {
-    
-    margin: 5px;
-    
+/* ===== Lahore subheading ===== */
+.subheading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 1rem auto 0.75rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid #666;
+  width: 300px; /* border only under text */
 }
 
-section article {
-    float: left;
+/* ===== Lahore section ===== */
+.city-info {
+  display: flex;  
+  flex-direction: row;   /* flag left, text right */
+  align-items: flex-start;
+  gap: 1.5rem;
 }
 
+.flag-section {
+  flex: 0 0 140px; /* fixed width for flag */
+  text-align: center;
+}
+
+.flag-section img {
+  max-width: 120px;
+  border-radius: 0.25rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.caption {
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  color: #555;
+}
+
+.city-info p {
+  flex: 1; /* text fills remaining space */
+  margin: 0;
+}
+
+/* ===== RESOURCES ===== */
+.resources {
+  display: flex;
+  flex-direction: column;
+}
+
+.resources-list {
+  flex: 1;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.resources ul {
+  list-style: disc;
+  margin: 0;
+  padding: 3rem;
+  text-align: left;
+}
+
+.resources li {
+  margin: 0.5rem 0;
+}
+
+.resources a {
+  display: block;
+  color: #003366;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: left;
+}
+
+.resources a:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
 footer {
-    text-align: center;
-    margin-top: 5px;
-    padding: 10px;
-    background-color: var(--secondary-color);
-    color: var(--accent2-color);
-    font-weight: 500;
-    font-family: "Merriweather", sans-serif;
+  background-color: #003366;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
 }
 
-.modified-last {
-    font-family: "Merriweather", sans-serif;
-    color: greenyellow;
-    font-weight: bold;
-    padding: 0.5rem;
-    font-size: 0.8rem;
+#lastModified {
+  color: #ffcc00;
 }
