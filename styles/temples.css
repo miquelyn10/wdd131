@@ -95,15 +95,12 @@ main {
 figure{
     background-color: rgba(240, 238, 238, 0.555);
     width: 400px;
-    border-radius: 15px;
-    padding: 1.5rem;
-    box-shadow: 7px 7px 5px rgba(128, 128, 128, 0.616);
-}
-.fig{
     border: 2px solid black;
+    border-radius: 15px;
     padding: 10px;
     box-shadow: 5px 5px 5px 5px grey;
 }
+
 figure:hover{
     box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.616);
     transform: scale(1.05);
