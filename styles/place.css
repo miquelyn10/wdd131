@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    align-items: center;
+    text-align: center;
+    background-color: #d6d6d6;
+}
+header {
+    background-color: #d21034;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: solid 20px #007849;
+
+}
+header h1 {
+    font-size: 2.5em;
+}
+picture img{
+    width: 100%;
+    height: auto;
+}
+footer {
+    background-color: #d21034;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.overlay{
+    display: none;
+}
