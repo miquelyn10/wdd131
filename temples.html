@@ -1,80 +1,84 @@
-<!DOCTYPE html>     
+<!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Emmanuel Nasir</title>
-    <meta name="author" content="Emmanuel Nasir">
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals |Emmanuel Nasir| wdd131 picture album of various temples that are responsive.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wdth@0,75..100;1,75..100&display=swap" rel="stylesheet">
-    <link href="styles/temples.css" rel="stylesheet">
-    <link href="styles/temples-large.css" rel="stylesheet">
+    <title>Temple Photo Gallery</title>
+    <meta name="description" content="Photo gallery of temples">
+    <meta name="author" content="Kelsey Woodland">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
     <script src="scripts/temples.js" defer></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-<header>
-    <img src="./images/rome_italy_temple.png" alt="rome_italy_temple" loading="lazy">
-        <b><em>Temple Album</em></b>
-       <button id="navBtn">&#9776; </button>
-        <nav id="nav">
-            <a href="#">Home</a>
-            <a href="#">Old</a>
-            <a href="#">New</a>
-            <a href="#">Large</a>
-            <a href="#">Small</a>
+    <header>
+        <div class="header-content">
+            <h1>Temple Album</h1>
+        </div>
+        <button type="button" id="menu" aria-label="Toggle navigation"></button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="temples.html">Old</a>
+            <a href="temples.html">New</a>
+            <a href="temples.html">Large</a>
+            <a href="temples.html">Small</a>
         </nav>
     </header>
-       
-    
-<main>
-    <div class="main-title">
-        <h2>Temple Photo Gallery</h2>
-    </div>
-    <div class="gallery">
-        <figure>
-            <img src="images/payson.webp" alt="Temple 1">
-            <figcaption>Temple 1</figcaption>
-        </figure>
-        <figure>
-            <img src="images/payson.webp" alt="Temple 2">
-            <figcaption>Temple 2</figcaption>
-        </figure>
-        <figure>
-            <img src="images/payson.webp" alt="Temple 3">
-            <figcaption>Temple 3</figcaption>
-        </figure>
-        <figure>
-            <img src="images/payson.webp" alt="Temple 4">
-            <figcaption>Temple 4</figcaption>
-        </figure>
-        <figure>
-            <img src="images/payson.webp" alt="Temple 5">
-            <figcaption>Temple 5</figcaption>
-        </figure>
-        <figure>
-            <img src="images/payson.webp" alt="Temple 6">
-            <figcaption>Temple 6</figcaption>
-        </figure>
-        <figure>
-            <img src="images/payson.webp" alt="Temple 7">
-            <figcaption>Temple 7</figcaption>
-        </figure>
-        <figure>
-            <img src="images/payson.webp" alt="Temple 8">
-            <figcaption>Temple 8</figcaption>
-        </figure>
-        <figure>
-            <img src="images/payson.webp" alt="Temple 9">
-            <figcaption>Temple 9</figcaption>
-        </figure>
-    </div>
-</main>
-<footer>
-    <p><span id="currentYear"> </span> 🌺Emmanuel Nasir🌺Nigeria</p>
-    <p id="lastModified"></p>
-   
-    </footer></body>
+    <main>
+        <div class="main-title">
+            <h2>Temple Photo Gallery</h2>
+        </div>
+        <div class="gallery">
+            <figure>
+                <img src="images/payson.webp" alt="Temple 1">
+                <figcaption>Temple 1</figcaption>
+            </figure>
+            <figure>
+                <img src="images/payson.webp" alt="Temple 2">
+                <figcaption>Temple 2</figcaption>
+            </figure>
+            <figure>
+                <img src="images/payson.webp" alt="Temple 3">
+                <figcaption>Temple 3</figcaption>
+            </figure>
+            <figure>
+                <img src="images/payson.webp" alt="Temple 4">
+                <figcaption>Temple 4</figcaption>
+            </figure>
+            <figure>
+                <img src="images/payson.webp" alt="Temple 5">
+                <figcaption>Temple 5</figcaption>
+            </figure>
+            <figure>
+                <img src="images/payson.webp" alt="Temple 6">
+                <figcaption>Temple 6</figcaption>
+            </figure>
+            <figure>
+                <img src="images/payson.webp" alt="Temple 7">
+                <figcaption>Temple 7</figcaption>
+            </figure>
+            <figure>
+                <img src="images/payson.webp" alt="Temple 8">
+                <figcaption>Temple 8</figcaption>
+            </figure>
+            <figure>
+                <img src="images/payson.webp" alt="Temple 9">
+                <figcaption>Temple 9</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> 🌲 Kelsey Woodland 🌲 Utah</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
 </html>
