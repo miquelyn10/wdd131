@@ -99,7 +99,7 @@ figure{
     padding: 1.5rem;
     box-shadow: 7px 7px 5px rgba(128, 128, 128, 0.616);
 }
-#fig{
+.fig{
     border: 2px solid black;
     padding: 10px;
     box-shadow: 5px 5px 5px 5px grey;
